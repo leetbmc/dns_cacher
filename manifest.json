@@ -1,0 +1,21 @@
+{
+  "name": "DNS Cacher",
+  "version": "0.7",
+  "manifest_version": 2,
+  "description": "A Chrome Extension For Offline DNS Caching",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "DNS Cacher",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [ "src/cacher.js" ]
+  },
+  "permissions": [
+    "webRequest",
+    "<all_urls>",
+    "storage",
+    "unlimitedStorage",
+    "*://*/"
+  ]
+}
